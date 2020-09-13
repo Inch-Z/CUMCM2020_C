@@ -1,0 +1,10 @@
+clear;clc;
+figure(1);
+x=0.04:0.0001:0.15;
+y1=x.*(1-( 2.2386+ 0.669.*log(x)));
+y2=x.*(1-( 2.1576+ 0.65057.*log(x)));
+y3=x.*(1-(  2.168+ 0.65856.*log(x)));
+plot(x,y1,'linewidth',2);
+hold on;plot(x,y2,'linewidth',2);
+hold on;plot(x,y3,'linewidth',2);
+legend('A','B','C');xlabel('贷款利率');ylabel('期望收益');
